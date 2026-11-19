@@ -1,0 +1,107 @@
+{
+  "parameters": {
+    "gamma": 0.5,
+    "sigma_D": 0.2,
+    "mu_D": 0.03,
+    "beta": 0.05,
+    "D0": 1.0,
+    "Y0": 0.5,
+    "varrho": 0.04000000000000001,
+    "h_power": 1.0,
+    "T_horizon": 5.0,
+    "n_steps": 1000,
+    "n_paths": 20000,
+    "seed": 20251119,
+    "eta_offsets": [
+      -0.5,
+      -0.1,
+      0.0,
+      0.1,
+      0.5
+    ]
+  },
+  "drift_check": {
+    "rows": [
+      {
+        "eta_minus_kappa_offset": -0.5,
+        "max_abs_drift": 8.42264926758851,
+        "min_abs_drift": 0.08459942234046351
+      },
+      {
+        "eta_minus_kappa_offset": -0.1,
+        "max_abs_drift": 1.68452985351617,
+        "min_abs_drift": 0.016919884468092703
+      },
+      {
+        "eta_minus_kappa_offset": 0.0,
+        "max_abs_drift": 0.0,
+        "min_abs_drift": 0.0
+      },
+      {
+        "eta_minus_kappa_offset": 0.1,
+        "max_abs_drift": 1.68452985351617,
+        "min_abs_drift": 0.016919884468092707
+      },
+      {
+        "eta_minus_kappa_offset": 0.5,
+        "max_abs_drift": 8.42264926758851,
+        "min_abs_drift": 0.0845994223404635
+      }
+    ],
+    "only_eta_equals_kappa_annihilates_drift": true
+  },
+  "monte_carlo": {
+    "checkpoints": [
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "E_M": [
+      44.4890186271336,
+      44.35988295568949,
+      44.141513188280946,
+      43.48158042650334,
+      41.73489237692937,
+      40.137066366067884,
+      38.81283237093035,
+      37.69376356420019
+    ],
+    "se_M": [
+      0.006407116266738452,
+      0.010874095466570737,
+      0.017349293721947084,
+      0.02396732650988987,
+      0.024102620739302884,
+      0.02167565290139888,
+      0.02258711648362082,
+      0.023775618517468736
+    ],
+    "M0": 44.569409256442896,
+    "X2_bar_0": 16.049515212773958,
+    "c_T": 13.140231676690949,
+    "bound_holds_fraction": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_steps": 1000,
+    "n_paths": 20000,
+    "elapsed_sec": 8.674748182296753
+  },
+  "verdict": {
+    "only_eta_equals_kappa_annihilates_drift": true,
+    "E_M_strictly_below_M0": true,
+    "lower_bound_M_geq_cT_L1_holds": true,
+    "sigma_S_bounded_away_from_zero": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "gamma": 0.5,
+    "sigma_D": 0.2,
+    "mu_D": 0.03,
+    "beta": 0.05,
+    "D0": 1.0,
+    "varrho": 0.04000000000000001,
+    "g0": 24.999999999999996,
+    "eps_y": 0.0001,
+    "n_grid": 2000
+  },
+  "baseline": {
+    "label": "h_power=1.0 (linear, baseline)",
+    "h_power": 1.0,
+    "n_grid": 2000,
+    "min_sigma_S": 0.16919884468092702,
+    "max_sigma_S": 16.84529853517702,
+    "max_jump": 0.04026647091398172,
+    "max_grid_step": 0.0005001500750375643,
+    "lipschitz_proxy": 80.50877711246463,
+    "min_v_prime": 17.49664468870961,
+    "min_k": 21.235499798793914,
+    "max_k": 24.999999999999996,
+    "one_over_rho": 24.999999999999996,
+    "min_g": 0.4121391017040747,
+    "max_g": 24.998749968748434
+  },
+  "robustness_alt_h": {
+    "label": "h_power=2.0 (robustness check)",
+    "h_power": 2.0,
+    "n_grid": 2000,
+    "min_sigma_S": 0.1678670815322992,
+    "max_sigma_S": 17.176562437503716,
+    "max_jump": 0.040724222291585344,
+    "max_grid_step": 0.0005001500750375643,
+    "lipschitz_proxy": 81.42400516190408,
+    "min_v_prime": 17.061667147270906,
+    "min_k": 21.654531398408434,
+    "max_k": 24.999999999999996,
+    "one_over_rho": 24.999999999999996,
+    "min_g": 0.5291706226062808,
+    "max_g": 24.998749968748434
+  },
+  "verdict": {
+    "sigma_S_strictly_positive": true,
+    "v_prime_strictly_positive": true,
+    "k_within_bounds": true
+  }
+}
