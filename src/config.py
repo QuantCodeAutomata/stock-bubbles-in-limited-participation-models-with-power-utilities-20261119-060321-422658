@@ -36,7 +36,7 @@ Y0 = 0.5        # initial state value Y_0 in (0,1); the paper (footnote 2, p.2) 
 # in [gamma,1] with h(0)=gamma, h(1)=1 (Section 2, p.2). Its ODE "is not used" in this paper
 # (Section 2, p.2), so it is not reproduced here; H_POWER selects one admissible representative
 # h(y) = gamma + (1-gamma)*y**H_POWER satisfying exactly these three stated properties.
-H_POWER = 1.0   # exponent of the assumed admissible h(y); not specified in the paper (see uncertainties)
+H_POWER = 1.0   # exponent of the assumed admissible h(y); not specified in the paper
 H_POWER_ALT = 2.0  # alternate admissible exponent, used only for the Experiment 1 robustness check
 
 # g(0) is the free positive constant in Theorem 3.6(1) of GLL (2025) used in the exponential
@@ -48,8 +48,8 @@ G0 = 1.0 / RHO  # not specified in the paper
 # --------------------------------------------------------------------------
 # Experiment 1: equilibrium ODEs and sigma_S(y) (Proposition 2.1)
 # --------------------------------------------------------------------------
-EPS_Y = 1e-4          # distance of the numerical grid from the singular endpoints 0 and 1 (implementation notes)
-N_GRID_PAPER = 10000  # number of evaluation points on [eps, 1-eps] suggested in the implementation notes
+EPS_Y = 1e-4          # distance of the numerical grid from the singular endpoints 0 and 1; not specified in the paper
+N_GRID_PAPER = 10000  # number of evaluation points on [eps, 1-eps]; not specified in the paper
 N_GRID_RUN = 2000      # number of evaluation points actually used (equivalent accuracy, lighter runtime)
 BVP_TOL = 1e-6        # solve_bvp residual tolerance for the k(y) Dirichlet problem (ODE 18)
 BVP_MAX_NODES = 200000  # solve_bvp maximum mesh size
@@ -66,7 +66,7 @@ CHECKPOINTS = (0.1, 0.25, 0.5, 1.0, 2.0, 3.0, 4.0, 5.0)  # times at which E[L_1,
 N_STEPS_PAPER = 2500    # Euler-Maruyama steps over T_HORIZON (dt = 2e-3); not specified in the paper
 N_STEPS_RUN = 1000      # steps actually used (dt = 5e-3)
 
-N_PATHS_PAPER = 100000  # Monte Carlo paths suggested in the implementation notes
+N_PATHS_PAPER = 100000  # Monte Carlo paths; not specified in the paper
 N_PATHS_RUN = 20000     # paths actually used for the main run
 
 MC_SEED = 20251119      # Monte Carlo seed for reproducibility; not specified in the paper

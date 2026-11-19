@@ -14,9 +14,9 @@ value is a strict local martingale rather than a true martingale, even though
 the market faced by the unrestricted trader is endogenously complete.
 
 This repository is a purely numerical/theoretical replication: no market data
-is used anywhere, because every selected experiment is a verification of a
-proposition, lemma or theorem through ordinary-differential-equation solving
-and Monte Carlo simulation of the model's own state variables.
+is used anywhere, because each experiment reproduced here is a verification
+of a proposition, lemma or theorem through ordinary-differential-equation
+solving and Monte Carlo simulation of the model's own state variables.
 
 ## Experiments reproduced
 

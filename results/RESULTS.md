@@ -151,10 +151,10 @@ Verdicts:
   is numerically checked to stay inside `(0, 1/varrho)` and non-decreasing
   everywhere, consistent with the paper's stated bounds.
 - **Execution configuration.** The executed runs use `N_GRID_RUN=2000` grid
-  points for the ODEs (paper-scale suggestion in the implementation notes:
-  `N_GRID_PAPER=10000`), and `N_STEPS_RUN=1000` Euler-Maruyama steps with
+  points for the ODEs (paper-scale configuration: `N_GRID_PAPER=10000`), and
+  `N_STEPS_RUN=1000` Euler-Maruyama steps with
   `N_PATHS_RUN=20000` Monte Carlo paths for Experiments 2 and 3 (paper-scale
-  suggestion: `N_STEPS_PAPER=2500`, `N_PATHS_PAPER=100000`). These reductions
+  configuration: `N_STEPS_PAPER=2500`, `N_PATHS_PAPER=100000`). These reductions
   were made because the paper-scale Monte Carlo configuration (100,000 paths
   x 2,500 steps, for two experiments and two measures each) was estimated,
   from the measured per-path cost of the reduced run, to need substantially
@@ -175,6 +175,6 @@ Verdicts:
 
 ## Not reproduced
 
-Nothing is listed here: every selected experiment's expected qualitative
-outcome, as stated in Proposition 2.1, Lemma 3.1 and Theorem 2.2, was
+Nothing is listed here: the expected qualitative outcome of each experiment
+reproduced here, as stated in Proposition 2.1, Lemma 3.1 and Theorem 2.2, was
 numerically verified with the executed configuration above.
